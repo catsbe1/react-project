@@ -20,6 +20,7 @@ export default function Weather(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
+    search();
   }
 
   function search() {
@@ -30,14 +31,13 @@ export default function Weather(props) {
   }
   function getCity(event) {
     setCity(event.target.value);
-    search();
   }
 
   if (weatherData.ready) {
     return (
       <div className="container">
         <form onSubmit={handleSubmit}>
-          <input type="Search" onChange={getCity} />
+          <input type="Search" autoFocus="on" onChange={getCity} />
           <input type="submit" />
         </form>
         <WeatherInfo data={weatherData} />
