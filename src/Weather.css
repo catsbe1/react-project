@@ -6,7 +6,7 @@
   margin: 0 auto !important;
   box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-color: aqua;
 }
 
@@ -35,6 +35,7 @@
   background: none;
   border-radius: 10px;
   border: 1px solid white;
+  color: white;
 }
 
 .submit {
@@ -49,6 +50,7 @@
     border-radius: 10px !important;
     margin: 0 auto !important;
     box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.2);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
