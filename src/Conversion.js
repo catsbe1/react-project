@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Conversion.css";
 
 export default function Conversion(props) {
   const [unit, setUnit] = useState("celsius");
@@ -15,11 +16,11 @@ export default function Conversion(props) {
   if (unit === "celsius") {
     return (
       <div>
-        <span>{Math.round(props.celsius)}</span>
-        <span>
-          °C |
-          <a href="/" onClick={convertFahrenheit}>
-            °F
+        <span className="temp">{Math.round(props.celsius)}°</span>
+        <span className="convert">
+          C |
+          <a href="/" onClick={convertFahrenheit} className="fahrenheit">
+            F
           </a>{" "}
         </span>
       </div>
@@ -27,12 +28,12 @@ export default function Conversion(props) {
   } else {
     return (
       <div>
-        <span>{Math.round(fahrenheit)}</span>
-        <span>
-          <a href="/" onClick={convertCelsius}>
-            °C
+        <span className="temp">{Math.round(fahrenheit)}°</span>
+        <span className="convert">
+          <a href="/" onClick={convertCelsius} className="celsius">
+            C
           </a>{" "}
-          | °F
+          | F
         </span>
       </div>
     );

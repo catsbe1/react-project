@@ -1,0 +1,54 @@
+.card {
+  max-width: 500px;
+  height: 800 !important;
+  border: none !important;
+  border-radius: 10px !important;
+  margin: 0 auto !important;
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: aqua;
+}
+
+.morning {
+  background: url("/src/images/morning.jpg");
+}
+
+.afternoon {
+  background: url("/src/images/afternoon.jpg");
+}
+
+.evening {
+  background: url("/src/images/evening.jpg");
+}
+
+.night {
+  background: url("/src/images/night.jpg");
+}
+
+.form {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.SearchInput {
+  background: none;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.submit {
+  background: none;
+  border: none;
+}
+
+@media only screen and (max-width: 1280px) {
+  .card {
+    height: 100% !important;
+    width: 100%;
+    border-radius: 10px !important;
+    margin: 0 auto !important;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.2);
+    background-size: contain;
+  }
+}

@@ -1,0 +1,17 @@
+.day {
+  color: white;
+}
+
+.forecast {
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.dailyTemp {
+  color: white;
+}
+
+canvas {
+  width: 30px !important;
+  height: 30px !important;
+}

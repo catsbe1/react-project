@@ -6,6 +6,14 @@ function App() {
   return (
     <div className="container">
       <Weather defaultCity="New York" />
+      <div className="footer">
+        <p className="info-text">
+          <a href="https://github.com/catsbe1" rel="noreferrer" target="_blank">
+            Open-source code
+          </a>{" "}
+          by Ana Ribeiro
+        </p>
+      </div>
     </div>
   );
 }
